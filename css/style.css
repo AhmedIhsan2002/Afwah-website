@@ -1722,6 +1722,11 @@ margin-bottom: 40px;
 height: 229px;
 flex-shrink: 0;
 }
+.Our-partners img{
+    width: 253px;
+height: 76px;
+flex-shrink: 0;
+}
 @media (max-width:991px){
     .img-Supermarkets-store{
         margin-bottom: 30px;
@@ -1736,6 +1741,9 @@ flex-shrink: 0;
 @media (max-width:767px){
     .button-42{
         margin: 20px;
+    }
+    .Our-partners img{
+        width: 100%;
     }
     .img-Supermarkets-store img{
       width: 200px;
