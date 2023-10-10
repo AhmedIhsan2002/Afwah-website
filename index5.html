@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تفاصيل المشتري</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/select2.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- start section navbar -->
+
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="" />
+      </a>
+
+      <nav class="navbar" id="navbar">
+        <a class="active" href="#">خدمة فواح </a>
+        <a href="#">تسوق</a>
+        <a href="#">الأكثر تجربة</a>
+        <a href="#">سجل متجرك</a>
+        <a href="#">تسجيل الدخول</a>
+        <a class="cart" href=""
+          ><li style="list-style: none; display: inline-block">
+            <img src="images/shopping-cart.svg" alt="" /></li
+        ></a>
+      </nav>
+
+      <div class="icons">
+        <!-- <div class="cart" id="search-btn"><img src="images/shopping-cart.svg" alt=""></div> -->
+        <div class="fa fa-bars" id="menu-btn"></div>
+      </div>
+    </header>
+    <!-- end section navbar -->
+
+    <!-- Start section Fawah service experience -->
+    <section class="Fawah-service">
+      <div class="container">
+        <h4>تمتع بتجربة خدمة فواح</h4>
+
+        <h2>
+          الشحن والتوصيل
+          <img src="images/van.png" width="48px" height="48px" alt="" />
+        </h2>
+
+        <h6>عنوان التوصيل</h6>
+
+        <div class="row">
+          <div class="add-to-title">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="box-location">
+                <h4>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> السعودية -
+                  جدة
+                </h4>
+
+                <h3>بيل - شسبيل - بجانب مول جدة</h3>
+                <div class="edit-title">
+                  <!-- Indicates caution should be taken with this action -->
+                  <a type="button" class="btn btn-warning btn-editing">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    تعديل
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="box-title">
+                <img
+                  src="images/add-location 1.png"
+                  width="80px"
+                  height="80px"
+                  alt=""
+                />
+                <p>اضف عنوان جديد</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End section Fawah service experience -->
+    <!-- 
+    *********************************************************************
+    *********************************************************************
+    ******************************************************************** -->
+
+    <!-- Start section customer -->
+    <section class="form-customer">
+      <div class="container">
+        <div class="row">
+          <form action="" class="form-data">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom04">اختر المدينة </label>
+              <select
+                class="form-control form-control-lg"
+                id="validationCustom04"
+                name="activity"
+                required
+              >
+                <option value="">اختر ...</option>
+                <option value="Classroom Instruction and Assessment">
+                  جدة
+                </option>
+                <option value="Curriculum Development and Alignment">
+                  قطاع-غزة
+                </option>
+                <option value="District Committee">القاهرة</option>
+                <option value="Meeting">بيروت</option>
+                <option value="Other Category">ابوظبي</option>
+                <option value="Professional Conference">العقبة</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">اختر الدولة :</label>
+
+              <select
+                class="form-control form-control-lg"
+                name="category"
+                id="validationCustom03"
+                onchange="ChangecatList()"
+                required
+              >
+                <option value="">اختر ...</option>
+                <option value="Classroom Instruction and Assessment">
+                  السعودية
+                </option>
+                <option value="Curriculum Development and Alignment">
+                  فلسطين
+                </option>
+                <option value="District Committee">مصر</option>
+                <option value="Meeting">لبنان</option>
+                <option value="Other Category">الامارات العربية</option>
+                <option value="Professional Conference">الاردن</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom04">الحي</label>
+              <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="ادخل اسم الحي"
+              />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom04">الشارع</label>
+              <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="ادخل اسم الشارع"
+              />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom04">وصف البيت</label>
+              <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="بيل"
+              />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom04">الرمز البريدي</label>
+              <input
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="ادخل اسم  الرمز البريدي"
+              />
+            </div>
+
+            <div class="info">
+              <h4>
+                <img src="images/onof.png" width="40px" height="20px" alt="" />
+                توصيل مع شخص اخر
+              </h4>
+
+              <p>اختر شركة الشحن</p>
+              <div>
+               
+                <input type="radio" name="شركة ارامكس" id="">
+                <label for="">شركة ارامكس (من 1-3 ايام عمل)</label>
+
+                
+              </div>
+              <div>
+               
+                <input type="radio" name="شركة ارامكس" id="">
+                <label for="">شركة ارامكس (من 1-3 ايام عمل)</label>
+
+                
+              </div>
+
+              <h6> <i style="font-style: 30px;" class="fa fa-credit-card-alt" aria-hidden="true"></i> طريقة الدفع </h6>
+
+              <div class="img-payments">
+                <img src="images/mastercard.png" alt="">
+                <img src="images/visa.png" alt="">
+                <img src="images/paypal.png" alt="">
+               
+              </div>   
+
+              <div class="crdit-card">
+                <input type="number" class="form-control" placeholder="رقم البطاقة">
+                <input type="date" class="form-control" name="" id="" placeholder="الشهر / السنة">
+                <input type="number" class="form-control" placeholder="رمز التحقق(CCV)">
+              </div>
+          
+             
+
+
+            </div>
+           
+          
+          </form>
+
+          <div class="col-md-12 mb-3">
+            <div class="mony">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>ملخص السلة</p>
+                       <h5> 17ر.س</h5>
+                    </div>
+                    <div class="col-md-12">
+                        <p>تكلفة الشحن</p>
+                        <h5>50 ر.س</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>اجمالي الطلب</p>
+                        <h5> 67 ر.س</h5>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+
+      
+          
+       
+        
+
+        </div>
+        
+     
+    </section>
+
+    <!-- end section form-customer -->
+
+
+          <!-- start footer -->
+          <footer class="footer-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="box-footer">
+                        <div class="col-lg-2 col-md-2  col-sm-3">
+                            <ul>
+                                <li><a href="#">الدعم الفني</a></li>
+                                <li><a href=""><span> مركز المساعدة</span></a></li>
+    
+                            </ul>
+                        </div>
+    
+                        <div class="col-lg-2 col-md-2  col-sm-3">
+                            <ul>
+                                <li><a href=""> الاعمال</a></li>
+                                <li><a href=""><span>  سجل متجرك</span></a></li>
+                                <li><a href=""><span> نموذج عمل فواح</span></a></li>
+    
+    
+                            </ul>
+                        </div>
+    
+    
+                        
+                        <div class="col-lg-2 col-md-2  col-sm-3">
+                            <ul>
+                                <li><a href=""> تسوق</a></li>
+                                <li><a href=""><span> المتاجر</span></a></li>
+                                <li><a href=""><span> نموذج عمل فواح</span></a></li>
+    
+    
+                            </ul>
+                        </div>
+    
+    
+                            
+                        <div class="col-lg-2 col-md-2 col-sm-3">
+                            <ul>
+                                <li><a href=""> فواح</a></li>
+                                <li><a href=""><span> خدمة فواح</span></a></li>
+                                <li><a href=""><span>الشروط و الاحكام</span></a></li>
+    
+    
+                            </ul>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-2 col-sm-12 logo-sec-footer">
+                            <div class="logo-footer">
+                                <img src="images/شعار_موقع_فواح-removebg-preview 3.png" alt="">
+    
+                            <div class="title-footer" >
+                                <h3>مؤسسة فواح لضمان الاعمال</h3>
+                                <p>المملكة العربية السعودية</p>
+                            </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+    
+                    <div class="box-flex">
+    
+                        <div class="right">
+                        
+                            <ul>
+                                <span>تابعنا</span>
+                                <li><i class="fa fa-whatsapp" aria-hidden="true"  data-toggle="tooltip" data-placement="left" title="whatsapp"></i></li>
+                                <li><i class="fa fa-snapchat-ghost" aria-hidden="true"  data-toggle="tooltip" data-placement="left" title="snapchat"></i></li>
+                                <li><i class="fa fa-instagram" aria-hidden="true"  data-toggle="tooltip" data-placement="left" title="instagram"></i></li>
+                                <li><i class="fa fa-twitter" aria-hidden="true"  data-toggle="tooltip" data-placement="left" title="twitter"></i></li>
+                            </ul>
+                        </div>
+    
+                    
+                        <div class="center">
+                            <h4>السجل التجاري 15123435</h4>
+                        </div>
+    
+                    
+    
+                        <div class="left">
+                            <p>جميع حقوق النشر محفوظة &copy; 2023</p>
+                        </div>
+    
+                    </div>
+                </div>
+    
+    
+            </div>
+            </footer>
+    
+       <!-- end footer -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.15/jquery.transit.min.js"></script>
+
+    <script src="js/mian.js"></script>
+  </body>
+</html>
