@@ -1722,29 +1722,24 @@ margin-bottom: 40px;
 height: 229px;
 flex-shrink: 0;
 }
-.Our-partners img{
-    width: 253px;
-height: 76px;
-flex-shrink: 0;
-}
+
+
 @media (max-width:991px){
     .img-Supermarkets-store{
         margin-bottom: 30px;
     }
 
  
-.Our-partners{
-    margin-bottom: 40px;
-}
+
+    
 }
 
 @media (max-width:767px){
     .button-42{
         margin: 20px;
     }
-    .Our-partners img{
-        width: 100%;
-    }
+ 
+    
     .img-Supermarkets-store img{
       width: 200px;
       height: 229px;
@@ -1777,6 +1772,7 @@ flex-shrink: 0;
     margin-bottom: 40px;
     }
    
+    
 }
 
 .store p{
@@ -1790,9 +1786,25 @@ line-height: normal;
 margin-bottom: 120px;
 
 }
-.our-all-partners{
-   margin-left: 190px;
-}
+
+.our-all-partners {
+    display: flex;
+    flex-wrap: wrap; /* سيصطف العناصر أفقيًا ويرتبوا عندما لا يكون العرض كافيًا */
+    justify-content: space-between;
+  }
+  
+  .our-all-partners .img1,
+  .our-all-partners .img2 {
+    flex: 1;
+    max-width: 45%; /* تحدد العرض الأقصى لكل صورة بنسبة مئوية من العنصر الرئيسي */
+    margin: 1%; /* توفير هامش بين الصور */
+  }
+  
+  .Our-partners img {
+    max-width: 80%;
+    height: auto;
+  }
+  
 .benefit-Fawah{
     padding: 120px 0px;
     background-color: transparent;
